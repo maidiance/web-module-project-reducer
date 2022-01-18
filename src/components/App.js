@@ -38,27 +38,27 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={1} onclick={() => handleNumber(1)} />
-              <CalcButton value={2} onclick={() => handleNumber(2)}/>
-              <CalcButton value={3} onclick={() => handleNumber(3)}/>
+              <CalcButton value={1} onClick={() => handleNumber(1)}/>
+              <CalcButton value={2} onClick={() => handleNumber(2)}/>
+              <CalcButton value={3} onClick={() => handleNumber(3)}/>
             </div>
 
             <div className="row">
-              <CalcButton value={4} onclick={() => handleNumber(4)}/>
-              <CalcButton value={5} onclick={() => handleNumber(5)}/>
-              <CalcButton value={6} onclick={() => handleNumber(6)}/>
+              <CalcButton value={4} onClick={() => handleNumber(4)}/>
+              <CalcButton value={5} onClick={() => handleNumber(5)}/>
+              <CalcButton value={6} onClick={() => handleNumber(6)}/>
             </div>
 
             <div className="row">
-              <CalcButton value={7} onclick={() => handleNumber(7)}/>
-              <CalcButton value={8} onclick={() => handleNumber(8)}/>
-              <CalcButton value={9} onclick={() => handleNumber(9)}/>
+              <CalcButton value={7} onClick={() => handleNumber(7)}/>
+              <CalcButton value={8} onClick={() => handleNumber(8)}/>
+              <CalcButton value={9} onClick={() => handleNumber(9)}/>
             </div>
 
             <div className="row">
-              <CalcButton value={"+"} onclick={() => handleOperator('+')}/>
-              <CalcButton value={"*"} onclick={() => handleOperator('*')}/>
-              <CalcButton value={"-"} onclick={() => handleOperator('-')}/>
+              <CalcButton value={"+"} onClick={() => handleOperator('+')}/>
+              <CalcButton value={"*"} onClick={() => handleOperator('*')}/>
+              <CalcButton value={"-"} onClick={() => handleOperator('-')}/>
             </div>
 
             <div className="row ce_button">

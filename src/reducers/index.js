@@ -26,20 +26,21 @@ const reducer = (state, action) => {
             });
 
         case(APPLY_NUMBER):
+            
             return ({ 
                 ...state, 
                 total: calculateResult(state.total, action.payload, state.operation)
             });
         
         case(CHANGE_OPERATION):
-            console.log(state);
+            
             return ({
                 ...state,
                 operation: action.payload
             });
             
         default:
-            console.log(state);
+            
             return state;
     }
 }
