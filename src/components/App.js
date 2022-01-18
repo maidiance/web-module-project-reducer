@@ -3,7 +3,7 @@ import React, { useReducer } from 'react';
 import './App.css';
 
 import reducer, { initialState } from '../reducers/index';
-import { applyOperator, applyNumber, clearDisplay } from '../actions/index';
+import { applyOperator, applyNumber, clearDisplay, mPlus, mR } from '../actions/index';
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
@@ -17,6 +17,12 @@ function App() {
   }
   const handleClear = () => {
     dispatch(clearDisplay());
+  }
+  const handleMPlus = () => {
+    dispatch(mPlus());
+  }
+  const handleMR = () => {
+    dispatch(mR());
   }
   return (
     <div className="App">
@@ -35,8 +41,8 @@ function App() {
             </div>
             
             <div className="row">
-              <CalcButton value={"M+"}/>
-              <CalcButton value={"MR"}/>
+              <CalcButton value={"M+"} onClick={() => handleMPlus()}/>
+              <CalcButton value={"MR"} onClick={() => handleMR()}/>
               <CalcButton value={"MC"}/>
             </div>
 
